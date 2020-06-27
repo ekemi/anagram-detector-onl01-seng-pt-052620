@@ -12,7 +12,7 @@ class Anagram
 
     array_words.select{
       |value| value.split("").sort == @name.spli("").sort
-      
+
     }
 
 
