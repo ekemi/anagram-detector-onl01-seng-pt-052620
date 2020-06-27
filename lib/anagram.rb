@@ -10,19 +10,11 @@ class Anagram
 
   def match(array_words)
 
-    array =%w()
-    array_words.each{
-      |value|
-      if value != @word
-            return array
-
-      elsif value == @word.r
-            array << @word.reverse
-            return array
-
-      end
-
+    array_words.select{
+      |value| value.split("").sort == @name.spli("").sort
+      
     }
+
 
   end
 end
