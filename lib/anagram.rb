@@ -5,6 +5,7 @@ class Anagram
   def initialize(word)
 
     @word = word
+    binding.pry
   end
 
   def match(array_words)
@@ -15,7 +16,7 @@ class Anagram
       if value != @word
             return array
 
-      elsif value == @word.reverse
+      elsif value == @word.r
             array << @word.reverse
             return array
 
